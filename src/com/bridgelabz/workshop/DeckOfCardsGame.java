@@ -3,7 +3,7 @@ package com.bridgelabz.workshop;
 import java.util.ArrayList;
 import java.util.Scanner;
 /**
- * Purpose  - There should be minimum 2 and maximum 4 players in the game
+ * Purpose  - In this method we have defined the sequence of the player
  *
  */
 
@@ -67,5 +67,15 @@ public class DeckOfCardsGame {
             this.noOfPlayers();
             scanner.close();
         }
+    }
+    /**
+    In this method we have defined the sequence of the player.
+    We are itterating the loop till player input.
+     */
+    public void sequenceOfPlay(int player) {
+    	System.out.println("\nSequence of cards are below : ");
+    	for (int i = 1; i <= player; i++) {
+    		System.out.println("\nPlayer " + i + " Getting card.............");
+    	}
     }
 }
